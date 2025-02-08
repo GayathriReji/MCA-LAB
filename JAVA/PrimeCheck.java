@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
 public class PrimeCheck {
-    // Non-static method to check prime number
+  
     public boolean isPrime(int num) {
-        if (num <= 1) return false; // 0 and 1 are not prime
+        if (num <= 1) return false; 
 
         for (int i = 2; i < num; i++) {
             if (num % i == 0) {
-                return false; // If divisible, not prime
+                return false; 
             }
         }
-        return true; // Prime if no divisors found
+        return true; 
     }
 
     public static void main(String[] args) {
